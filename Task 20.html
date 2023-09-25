@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+</head>
+<body style="margin: 30px">
+    <p>Expected Output : <br>
+        <span id="result"></span>
+    </p>
+ 
+    <script>
+function alphabet_order(str) {
+    const lettersOnly = str.replace(/[^a-zA-Z]/g, '');
+    const sorted = lettersOnly.split('').sort().join('');
+    return sorted;
+  }
+  const str = 'web$mast@er';
+  const result = alphabet_order(str);
+  console.log(result); 
+  </script>
+  </body>
+</html>
